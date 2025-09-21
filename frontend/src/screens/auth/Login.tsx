@@ -184,6 +184,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     paddingLeft: 12,
     fontFamily: 'Poppins-Regular',
+    color: `${black}`
   },
   passwordInputContainer: {
     display: 'flex',
@@ -202,6 +203,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     paddingLeft: 12,
     fontFamily: 'Poppins-Regular',
+    color: `${black}`
   },
   forgotPasswordText: {
     textAlign: 'right',
