@@ -23,7 +23,13 @@ export default {
       "./assets/fonts/leagueSpartan/LeagueSpartan-Medium.ttf"
     ],
   "plugins": [
-    "expo-font"
+    "expo-font",
+    [
+      "expo-local-authentication",
+      {
+        "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID for authentication"
+      }
+    ]
   ],
     ios: {
       supportsTablet: true,

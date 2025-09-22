@@ -36,11 +36,7 @@ const Login = ({ navigation }: Props) => {
     });
   }
   const handleFingerprintSignIn = () => {
-    Toast.show({
-      type: 'error',
-      text1: 'Abhi Implement nahi hua fingerprint',
-      visibilityTime: 1500,
-    });
+  navigation.navigate('Fingerprint')
   }
   const handleForgotPassword = () => {
     navigation.navigate('ForgotPassword');
@@ -197,14 +193,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     paddingLeft: 10
   },
-  passwordInput: {
-    backgroundColor: `${white}`,
-    borderRadius: 15,
-    fontSize: 12,
-    paddingLeft: 12,
-    fontFamily: 'Poppins-Regular',
-    color: `${black}`
-  },
   forgotPasswordText: {
     textAlign: 'right',
     paddingTop: 4,
@@ -290,6 +278,7 @@ const styles = StyleSheet.create({
     paddingRight: 45,
     fontFamily: 'Poppins-Regular',
     flex: 1,
+    color: `${black}`
   },
   eyeButton: {
     position: 'absolute',
