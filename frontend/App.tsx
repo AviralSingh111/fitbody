@@ -5,6 +5,7 @@ import { useCallback } from 'react';
 import { AuthProvider } from '@/context/AuthContext';
 import RootNavigator from '@/navigation/RootNavigator';
 import Toast from 'react-native-toast-message';
+import { CheckBiometricSupport } from '@/components/checkBiometricSupport';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -35,6 +36,7 @@ export default function App() {
       <RootNavigator />
     </AuthProvider>
     <Toast />
+    <CheckBiometricSupport/>
   </View>
   );
 }
